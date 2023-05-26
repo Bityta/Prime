@@ -5,7 +5,7 @@ public class Prime {
     /*
     Метод, проверяющий число на простоту
      */
-    public static boolean prime(int num){
+    public static boolean isPrime(int num){
 
         for (int i = 2; i < Math.sqrt(num) + 1; i++){
             if (num % i == 0){
