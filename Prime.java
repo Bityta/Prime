@@ -7,7 +7,7 @@ public class Prime {
      */
     public static boolean isPrime(int num){
 
-        for (int i = 2; i < Math.sqrt(num) + 1; i++){
+        for (int i = 2; i < Math.sqrt(num+1); i++){
             if (num % i == 0){
                 return false;
             }
@@ -22,7 +22,7 @@ public class Prime {
 
         ArrayList<Integer> array = new ArrayList<>();
 
-        for (int i = 1; i < Math.sqrt(num)+1; i++){
+        for (int i = 1; i < Math.sqrt(num+1); i++){
             if (num % i == 0){
                 array.add(i);
                 if (i != num / i){
